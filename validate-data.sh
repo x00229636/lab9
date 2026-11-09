@@ -5,7 +5,7 @@ mobile="$2"
 name_length=${#name}
 mobile_length=${#mobile}
 
-if [ "$name_length" -le 15 ] && [ "$mobile_length" -le 10 ]; then
+if [ "$name_length" -le 20 ] && [ "$mobile_length" -le 10 ]; then
   echo "PASS"
 else
   echo "FAIL"
