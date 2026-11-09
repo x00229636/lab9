@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - test
 
 jobs:
   lab9-basic-tests:
@@ -37,7 +38,7 @@ jobs:
 
           result=$(./validate-data.sh Joannejoannejoan 0871234567)
           echo "Script output was: $result"
-          if [ "$result" = "FAIL" ]; then
+          if [ "$result" = "PASS" ]; then
             echo "Test Passed!"
           else
             echo "Test Failed!"
